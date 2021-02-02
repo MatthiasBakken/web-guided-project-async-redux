@@ -9,6 +9,7 @@ export const FETCH_FAILED = 'FETCH_FAILED';
 export const getQuote = () => {
 
   return (dispatch) => {
+    dispatch({ type: CLEAR_ERROR });
     dispatch({ type: START_FETCHING });
     // we can get here!!!!
     // aios
