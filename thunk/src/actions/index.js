@@ -3,6 +3,7 @@
 // action = plain object that has a required 'type' and optional 'payload'
 export const getQuote = () => {
   // ? ? ?
+  // transition to isFetching: true
 }
 
 
