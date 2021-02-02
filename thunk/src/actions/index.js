@@ -8,6 +8,8 @@ export const getQuote = () => {
   return {
     type: START_FETCHING
   }
+
+  // now let's call the api to get the quote!
 }
 
 
