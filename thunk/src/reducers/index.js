@@ -1,4 +1,4 @@
-import { QUOTE_RETRIEVED, START_FETCHING, FETCH_FAILED } from '../actions';
+import { QUOTE_RETRIEVED, START_FETCHING, FETCH_FAILED, CLEAR_ERROR } from '../actions';
 
 const initialState = {
   quote: null,
@@ -8,6 +8,11 @@ const initialState = {
 
 export const reducer = (state = initialState, action) => {
   switch (action.type) {
+    case CLEAR_ERROR: {
+      return {
+        ...state, error: ''
+      }
+    }
     case START_FETCHING: {
       return {
         ...state, isFetching: true, error: ''
