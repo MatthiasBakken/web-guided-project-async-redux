@@ -1,4 +1,4 @@
-import { QUOTE_RETRIEVED, START_FETCHING } from '../actions';
+import { QUOTE_RETRIEVED, START_FETCHING, FETCH_FAILED } from '../actions';
 
 const initialState = {
   quote: null,
