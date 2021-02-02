@@ -13,6 +13,11 @@ const Quotes = ({ ...props, quote, isFetching, error }) => {
   useEffect(() => {
   });
 
+  const handleGetQuote = e => {
+    e.preventDefault();
+    props.getQuote();
+  }
+
   if (error) {
     return <h2>We got an error: {error}</h2>;
   }
@@ -24,7 +29,7 @@ const Quotes = ({ ...props, quote, isFetching, error }) => {
   return (
     <>
       <h2>Kanye says: {quote}</h2>
-      <button>Get new quote</button>
+      <button onClick={handleGetQuote}>Get new quote</button>
     </>
   );
 };
