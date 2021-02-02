@@ -15,7 +15,7 @@ export const reducer = (state = initialState, action) => {
     }
     case START_FETCHING: {
       return {
-        ...state, isFetching: true, error: ''
+        ...state, isFetching: true
       }
     }
     case QUOTE_RETRIEVED: {
