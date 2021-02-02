@@ -7,6 +7,7 @@ export const getQuote = () => {
   return (dispatch) => {
     dispatch({ type: START_FETCHING });
     // we can get here!!!!
+    // axios
   }
   // ? ? ?
   // transition to isFetching: true
