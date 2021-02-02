@@ -3,6 +3,7 @@ import axios from "axios";
 export const START_FETCHING = 'START_FETCHING';
 export const QUOTE_RETRIEVED = 'QUOTE_RETRIEVED';
 export const FETCH_FAILED = 'FETCH_FAILED';
+export const CLEAR_ERROR = 'CLEAR_ERROR';
 
 // action creators!!
 // action = plain object that has a required 'type' and optional 'payload'
