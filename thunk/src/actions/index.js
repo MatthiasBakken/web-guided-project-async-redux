@@ -6,6 +6,8 @@ export const getQuote = () => {
 }
 
 
-//   state           action       new state
-// noerror,noq,notfetch   getQuote()   
-// noerror,yesq,notfetch   getQuote()   
+//       state             action       new state
+// noerror,noq,notfetch    getQuote()   error,noq,notfetch
+// noerror,yesq,notfetch   getQuote()
+// ...
+// error,noq,notfetch      reload()
