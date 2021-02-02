@@ -12,6 +12,8 @@ export const getQuote = () => {
     // aios
     console.log('we can call axios now!!!')
     axios.get('https://api.kanye.rest')
+      .then(res => console.log('bk: actions/index.js: getQuote: api res: ', res))
+      .catch(err => console.error('error getting a kanye quote from api: ', err))
   }
   // ? ? ?
   // transition to isFetching: true
