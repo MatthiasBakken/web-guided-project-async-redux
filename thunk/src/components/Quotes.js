@@ -9,7 +9,7 @@ import { getQuote } from '../actions';
 //   const isFetching = props.isFetching;
 //   const erro = props.error;
 
-const Quotes = ({ quote, isFetching, error }) => {
+const Quotes = ({ ...props, quote, isFetching, error }) => {
   useEffect(() => {
   });
 
