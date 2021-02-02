@@ -1,3 +1,4 @@
+import { START_FETCHING } from '../actions';
 
 const initialState = {
   quote: null,
