@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export const START_FETCHING = 'START_FETCHING';
 
 // action creators!!
@@ -7,8 +9,9 @@ export const getQuote = () => {
   return (dispatch) => {
     dispatch({ type: START_FETCHING });
     // we can get here!!!!
-    // axios
+    // aios
     console.log('we can call axios now!!!')
+    axios.get('https://api.kanye.rest')
   }
   // ? ? ?
   // transition to isFetching: true
