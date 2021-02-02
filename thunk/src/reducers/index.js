@@ -9,8 +9,9 @@ const initialState = {
 export const reducer = (state = initialState, action) => {
   switch (action.type) {
     case START_FETCHING: {
-
-    }
+      return {
+        ...state, isFetching: true
+      }
     default:
       return state;
   }
