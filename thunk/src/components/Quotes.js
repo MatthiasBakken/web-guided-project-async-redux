@@ -37,4 +37,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(Quotes);
+export default connect(mapStateToProps, { getQuote })(Quotes);
