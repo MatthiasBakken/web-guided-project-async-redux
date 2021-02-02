@@ -13,7 +13,7 @@ export const getQuote = () => {
     // we can get here!!!!
     // aios
     console.log('we can call axios now!!!')
-    axios.get('https://api.kanyeo.rest')
+    axios.get('https://api.kanye.rest')
       .then(res => {
         console.log('bk: actions/index.js: getQuote: api res: ', res)
         dispatch({ type: QUOTE_RETRIEVED, payload: res.data.quote })
