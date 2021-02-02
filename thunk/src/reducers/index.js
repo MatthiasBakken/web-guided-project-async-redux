@@ -1,4 +1,4 @@
-import { START_FETCHING } from '../actions';
+import { QUOTE_RETRIEVED, START_FETCHING } from '../actions';
 
 const initialState = {
   quote: null,
@@ -11,6 +11,13 @@ export const reducer = (state = initialState, action) => {
     case START_FETCHING: {
       return {
         ...state, isFetching: true
+      }
+    }
+    case QUOTE_RETRIEVED: {
+      return {
+        ...state,
+        quote: action.payload,
+        isFetching: false
       }
     }
     default:
