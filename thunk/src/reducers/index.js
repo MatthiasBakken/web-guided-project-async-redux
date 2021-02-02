@@ -12,6 +12,7 @@ export const reducer = (state = initialState, action) => {
       return {
         ...state, isFetching: true
       }
+    }
     default:
       return state;
   }
