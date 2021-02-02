@@ -1,9 +1,13 @@
+export const START_FETCHING = 'START_FETCHING';
 
 // action creators!!
 // action = plain object that has a required 'type' and optional 'payload'
 export const getQuote = () => {
   // ? ? ?
   // transition to isFetching: true
+  return {
+    type: START_FETCHING
+  }
 }
 
 
