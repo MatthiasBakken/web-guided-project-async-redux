@@ -8,6 +8,7 @@ export const getQuote = () => {
     dispatch({ type: START_FETCHING });
     // we can get here!!!!
     // axios
+    console.log('we can call axios now!!!')
   }
   // ? ? ?
   // transition to isFetching: true
