@@ -3,6 +3,12 @@ import { connect } from 'react-redux';
 
 import { getQuote } from '../actions';
 
+
+// const Quotes = (props) => {
+//   const quote = props.quote;
+//   const isFetching = props.isFetching;
+//   const erro = props.error;
+
 const Quotes = ({ quote, isFetching, error }) => {
   useEffect(() => {
   });
