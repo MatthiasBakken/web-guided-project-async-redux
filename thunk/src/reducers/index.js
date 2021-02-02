@@ -10,7 +10,7 @@ export const reducer = (state = initialState, action) => {
   switch (action.type) {
     case START_FETCHING: {
       return {
-        ...state, isFetching: true
+        ...state, isFetching: true, error: ''
       }
     }
     case QUOTE_RETRIEVED: {
