@@ -17,7 +17,10 @@ export const getQuote = () => {
         console.log('bk: actions/index.js: getQuote: api res: ', res)
         dispatch({ type: QUOTE_RETRIEVED, payload: res.data.quote })
       })
-      .catch(err => console.error('error getting a kanye quote from api: ', err))
+      .catch(err => {
+        console.error('error getting a kanye quote from api: ', err)
+        dispatch({ type: FETCH_FAILED, payload: err.message })
+      })
   }
   // ? ? ?
   // transition to isFetching: true
