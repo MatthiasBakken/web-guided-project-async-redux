@@ -26,7 +26,7 @@ const Quotes = ({ quote, isFetching, error, ...props }) => {
     <>
       <h2>Kanye says: {quote}</h2>
       {
-        error && <div><h2>We got an error: {error}</h2></div>
+        error && <div><h2 style={{ color: 'red' }}>We got an error: {error}</h2></div>
       }
       <button onClick={handleGetQuote}>Get new quote</button>
     </>
