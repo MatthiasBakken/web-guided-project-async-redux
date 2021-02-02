@@ -3,7 +3,7 @@ import { QUOTE_RETRIEVED, START_FETCHING, FETCH_FAILED, CLEAR_ERROR } from '../a
 const initialState = {
   quote: null,
   isFetching: false,
-  error: ''
+  error: 'this is bad'
 };
 
 export const reducer = (state = initialState, action) => {
