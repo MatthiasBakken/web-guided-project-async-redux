@@ -20,6 +20,12 @@ export const reducer = (state = initialState, action) => {
         isFetching: false
       }
     }
+    case FETCH_FAILED: {
+      return {
+        ...state,
+        error: action.payload
+      }
+    }
     default:
       return state;
   }
