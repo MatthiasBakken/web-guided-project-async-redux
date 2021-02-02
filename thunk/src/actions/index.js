@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export const START_FETCHING = 'START_FETCHING';
+export const QUOTE_RETRIEVED = 'QUOTE_RETRIEVED';
 
 // action creators!!
 // action = plain object that has a required 'type' and optional 'payload'
@@ -12,7 +13,10 @@ export const getQuote = () => {
     // aios
     console.log('we can call axios now!!!')
     axios.get('https://api.kanye.rest')
-      .then(res => console.log('bk: actions/index.js: getQuote: api res: ', res))
+      .then(res => {
+        console.log('bk: actions/index.js: getQuote: api res: ', res)
+        dispatch({ type: QUOTE_RETRIEVED, payload: res.data.quote })
+      })
       .catch(err => console.error('error getting a kanye quote from api: ', err))
   }
   // ? ? ?
