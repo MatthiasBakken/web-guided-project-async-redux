@@ -22,7 +22,8 @@ export const reducer = (state = initialState, action) => {
     case FETCHING_COMIC_SUCCESS:
       return {
         ...state,
-        comic: action.payload
+        comic: action.payload,
+        isFetching: false
       }
     default:
       return state;
