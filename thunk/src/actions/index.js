@@ -31,7 +31,7 @@ export const getLatestComic = () => (dispatch) => {
       })
       .catch(err => {
         console.error('unable to get latest comic: ', err.message)
-        dispatch()
+        dispatch({ type: FETCHING_COMIC_FAILURE, payload: err.message })
       })
   }, 2000);
 
