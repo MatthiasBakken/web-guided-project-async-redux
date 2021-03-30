@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Comic from './components/Comic';
+
 import './styles.css';
 
 function App() {
