@@ -15,7 +15,7 @@ function App(props) {
     <div className="App">
       <h1>xkcd</h1>
       <Comic />
-      <button onClick={handleSetComicTitle}>set commic title</button>
+      <button onClick={handleSetComicTitle}>set comic title</button>
     </div>
   );
 }
