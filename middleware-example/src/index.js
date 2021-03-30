@@ -12,7 +12,7 @@ import FriendsList from './components/FriendsList';
 import './styles.css';
 
 
-const store = createStore(rootReducer, applyMiddleware(thunk, logger));
+const store = createStore(rootReducer, applyMiddleware(logger));
 
 function App() {
   return (
