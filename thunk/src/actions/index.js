@@ -10,3 +10,7 @@ export const updateComicTitle = (newTitle) => {
     });
   }
 }
+
+export const getLatestComic = () => (dispatch) => {
+  dispatch({ type: START_FETCHING_COMIC });
+}
