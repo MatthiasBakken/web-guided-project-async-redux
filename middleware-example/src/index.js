@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import logger from 'redux-logger';
+import thunk from 'redux-thunk';
 
 import rootReducer from './reducers';
 
@@ -11,7 +12,7 @@ import FriendsList from './components/FriendsList';
 import './styles.css';
 
 
-const store = createStore(rootReducer, applyMiddleware(logger));
+const store = createStore(rootReducer, applyMiddleware(thunk, logger));
 
 function App() {
   return (
