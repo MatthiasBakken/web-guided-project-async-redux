@@ -9,6 +9,7 @@ class Title extends React.Component {
     editing: false
   };
   // const [newTitleText, setNewTitleText] = useState(this.props.title)
+  // const [editing, setEditing] = useState(false)
 
   handleChanges = e => {
     this.setState({ [e.target.name]: e.target.value });
