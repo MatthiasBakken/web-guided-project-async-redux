@@ -1,5 +1,5 @@
 import {
-  FETCHING_COMIC_FALIURE,
+  FETCHING_COMIC_FAILURE,
   FETCHING_COMIC_SUCCESS,
   UPDATE_COMIC_TITLE,
   START_FETCHING_COMIC
@@ -30,7 +30,7 @@ export const reducer = (state = initialState, action) => {
         comic: action.payload,
         isFetching: false
       }
-    case FETCHING_COMIC_FALURE:
+    case FETCHING_COMIC_FAILURE:
       return {
         ...state,
         isFetching: false,
