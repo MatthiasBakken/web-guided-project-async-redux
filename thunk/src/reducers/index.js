@@ -1,4 +1,4 @@
-import { UPDATE_COMIC_TITLE } from '../actions';
+import { UPDATE_COMIC_TITLE, START_FETCHING_COMIC } from '../actions';
 
 const initialState = {
   comicTitle: '',
@@ -13,6 +13,11 @@ export const reducer = (state = initialState, action) => {
       return {
         ...state,
         comicTitle: action.payload
+      }
+    case START_FETCHING_COMIC:
+      return {
+        ...state,
+        isFetching: true
       }
     default:
       return state;
