@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const Comic = props => {
   return (<div>
-    {props.error && <div style={{ color: 'red' }}>props.error</div>}
+    {props.error && <div style={{ color: 'red' }}>**{props.error}**</div>}
     {`${props.comicTitle}`}
     {props.isFetching ? <div>getting comic</div>
       : props.comic.img && <img src={props.comic.img} alt="xkcd comic" />
