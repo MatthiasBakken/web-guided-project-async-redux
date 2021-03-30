@@ -19,7 +19,7 @@ export const getLatestComic = () => (dispatch) => {
   //
   // axios.get('https://xkcd.com/info.0.json')
   // setTimeout(() => {
-  axios.get('https://dog.ceo/api/breeds/image/random')
+  axios.get('https://dog.ceo/api/breeds/image/rando')
     .then(res => {
       console.log('bk: actions/index.js: getLatestComic: res: ', res)
       dispatch({
