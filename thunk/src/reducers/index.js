@@ -1,4 +1,4 @@
-import { UPDATE_COMIC_TITLE, START_FETCHING_COMIC } from '../actions';
+import { FETCHING_COMIC_SUCCESS, UPDATE_COMIC_TITLE, START_FETCHING_COMIC } from '../actions';
 
 const initialState = {
   comicTitle: '',
