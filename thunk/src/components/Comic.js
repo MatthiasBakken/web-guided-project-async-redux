@@ -1,5 +1,7 @@
 import React from 'react';
 
-export const Comic = props => {
+const Comic = props => {
   return (<></>)
 }
+
+export default Comic;
