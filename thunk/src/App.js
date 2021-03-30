@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import Comic from './components/Comic';
-import { updateComicTitle } from './actions';
+import { updateComicTitle, getLatestComic } from './actions';
 
 import './styles.css';
 
@@ -27,4 +27,4 @@ function App(props) {
   );
 }
 
-export default connect(() => { return {} }, { updateComicTitle })(App);
+export default connect(() => { return {} }, { updateComicTitle, getLatestComic })(App);
