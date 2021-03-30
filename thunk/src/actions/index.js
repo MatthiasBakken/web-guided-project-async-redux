@@ -16,7 +16,8 @@ export const updateComicTitle = (newTitle) => {
 export const getLatestComic = () => (dispatch) => {
   dispatch({ type: START_FETCHING_COMIC });
   //
-  axios.get('https://xkcd.com/info.0.json')
+  // axios.get('https://xkcd.com/info.0.json')
+  axios.get('https://dog.ceo/api/breeds/image/random')
     .then(res => {
       console.log('bk: actions/index.js: getLatestComic: res: ', res)
     })
