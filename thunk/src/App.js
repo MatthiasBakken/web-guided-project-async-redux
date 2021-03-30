@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <h1>xkcd</h1>
+      <Comic />
     </div>
   );
 }
