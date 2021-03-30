@@ -7,7 +7,7 @@ import {
 
 const initialState = {
   comicTitle: '',
-  comic: {},
+  comic: {}, // {img: ''}
   isFetching: false,
   error: ''
 };
