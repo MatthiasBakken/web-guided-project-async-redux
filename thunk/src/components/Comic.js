@@ -4,6 +4,9 @@ import { connect } from 'react-redux';
 const Comic = props => {
   return (<div>
     {`${props.comicTitle}`}
+    {props.isFetching ? <div>getting comic</div>
+      : props.comic.img && <img src={props.comic.img} alt="xkcd comic" />
+    }
   </div>)
 }
 
