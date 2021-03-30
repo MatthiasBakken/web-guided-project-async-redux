@@ -5,10 +5,10 @@ import Comic from './components/Comic';
 
 import './styles.css';
 
-function App() {
+function App(props) {
   const handleSetComicTitle = e => {
     e.preventDefault();
-
+    props.updateComicTitle('this is my new title');
   }
   return (
     <div className="App">
