@@ -2,6 +2,7 @@ import { UPDATE_COMIC_TITLE } from '../actions';
 
 const initialState = {
   comicTitle: '',
+  comic: {},
   isFetching: false,
   error: ''
 };
