@@ -17,16 +17,18 @@ export const getLatestComic = () => (dispatch) => {
   dispatch({ type: START_FETCHING_COMIC });
   //
   // axios.get('https://xkcd.com/info.0.json')
-  axios.get('https://dog.ceo/api/breeds/image/random')
-    .then(res => {
-      console.log('bk: actions/index.js: getLatestComic: res: ', res)
-      dispatch({
-        type: FETCHING_COMIC_SUCCESS,
-        payload: {
-          img: res.data.message
-        }
+  setTimeout(() => {
+    axios.get('https://dog.ceo/api/breeds/image/random')
+      .then(res => {
+        console.log('bk: actions/index.js: getLatestComic: res: ', res)
+        dispatch({
+          type: FETCHING_COMIC_SUCCESS,
+          payload: {
+            img: res.data.message
+          }
+        })
       })
-    })
-    .catch(err => console.error('unable to get latest comic: ', err.message))
+      .catch(err => console.error('unable to get latest comic: ', err.message))
+  }, 2000);
 
 }
