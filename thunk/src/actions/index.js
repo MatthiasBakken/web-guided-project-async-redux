@@ -3,6 +3,7 @@ import axios from 'axios';
 export const UPDATE_COMIC_TITLE = 'UPDATE_COMIC_TITLE';
 export const START_FETCHING_COMIC = 'START_FETCHING_COMIC';
 export const FETCHING_COMIC_SUCCESS = 'FETCHING_COMIC_SUCCESS';
+export const FETCHING_COMIC_FAILURE = 'FETCHING_COMIC_FAILURE';
 
 export const updateComicTitle = (newTitle) => {
   return (dispatch) => {
@@ -28,7 +29,10 @@ export const getLatestComic = () => (dispatch) => {
           }
         })
       })
-      .catch(err => console.error('unable to get latest comic: ', err.message))
+      .catch(err => {
+        console.error('unable to get latest comic: ', err.message)
+        dispatch()
+      })
   }, 2000);
 
 }
