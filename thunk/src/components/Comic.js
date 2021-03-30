@@ -10,9 +10,9 @@ const Comic = props => {
 const mapStateToProps = state => {
   return {
     comicTitle: state.comicTitle,
-    comic,
-    isFetching,
-    error
+    comic: state.comic,
+    isFetching: state.isFetching,
+    error: state.error
   }
 }
 
