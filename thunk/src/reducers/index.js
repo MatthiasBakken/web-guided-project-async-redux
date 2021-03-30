@@ -19,6 +19,11 @@ export const reducer = (state = initialState, action) => {
         ...state,
         isFetching: true
       }
+    case FETCHING_COMIC_SUCCESS:
+      return {
+        ...state,
+        comic: action.payload
+      }
     default:
       return state;
   }
