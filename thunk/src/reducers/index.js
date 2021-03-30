@@ -1,4 +1,9 @@
-import { FETCHING_COMIC_FALIURE, FETCHING_COMIC_SUCCESS, UPDATE_COMIC_TITLE, START_FETCHING_COMIC } from '../actions';
+import {
+  FETCHING_COMIC_FALIURE,
+  FETCHING_COMIC_SUCCESS,
+  UPDATE_COMIC_TITLE,
+  START_FETCHING_COMIC
+} from '../actions';
 
 const initialState = {
   comicTitle: '',
@@ -24,6 +29,12 @@ export const reducer = (state = initialState, action) => {
         ...state,
         comic: action.payload,
         isFetching: false
+      }
+    case FETCHING_COMIC_FALURE:
+      return {
+        ...state,
+        isFetching: false,
+        error: action.payload
       }
     default:
       return state;
