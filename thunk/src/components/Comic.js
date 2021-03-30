@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const Comic = props => {
   return (<div>
-    {`comic title: ${this.props.comicTitle}`}
+    {`comic title: ${props.comicTitle}`}
   </div>)
 }
 
