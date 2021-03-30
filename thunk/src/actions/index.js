@@ -13,4 +13,11 @@ export const updateComicTitle = (newTitle) => {
 
 export const getLatestComic = () => (dispatch) => {
   dispatch({ type: START_FETCHING_COMIC });
+  //
+  axios.get('https://xkcd.com/info.0.json')
+    .then(res => {
+      console.log('bk: actions/index.js: getLatestComic: res: ', res)
+    })
+    .catch(err => console.error('unable to get latest comic: ', err.message))
+
 }
