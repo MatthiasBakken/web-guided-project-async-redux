@@ -1,3 +1,4 @@
+import { UPDATE_COMIC_TITLE } from '../actions';
 
 const initialState = {
   comicTitle: '',
@@ -7,6 +8,11 @@ const initialState = {
 
 export const reducer = (state = initialState, action) => {
   switch (action.type) {
+    case UPDATE_COMIC_TITLE:
+      return {
+        ...state,
+        comicTitle: action.payload
+      }
     default:
       return state;
   }
