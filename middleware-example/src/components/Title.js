@@ -5,7 +5,7 @@ import { updateTitle } from '../actions';
 
 class Title extends React.Component {
   state = {
-    newTitleText: '',//this.props.title,
+    newTitleText: this.props.title,
     editing: false
   };
   // const [newTitleText, setNewTitleText] = useState(this.props.title)
