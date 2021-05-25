@@ -10,7 +10,7 @@ export const getRandomQuote = () => {
     // transtion state to isFetching = true
     dispatch({ type: SET_FETCHING_QUOTE });
 
-    axios.get('https://animechan.vercel.app/api/rando')
+    axios.get('https://animechan.vercel.app/api/random')
       .then(res => {
         console.log('bk: actions/: getRandomQuote: res: ', res)
         dispatch({ type: FETCH_QUOTE_SUCCESS, payload: res.data })
