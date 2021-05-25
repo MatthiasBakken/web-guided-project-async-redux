@@ -3,7 +3,7 @@ import axios from 'axios';
 export const SET_FETCHING_QUOTE = 'SET_FETCHING_QUOTE';
 
 
-export const getRandomQuote = () => {
+export const getRandomQuote = () => (dispatch) => {
   // transtion state to isFetching = true
   dispatch({ type: SET_FETCHING_QUOTE });
 
