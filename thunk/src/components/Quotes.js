@@ -9,7 +9,7 @@ const Quotes = ({ quote, isFetching, error, getRandomQuote }) => {
   });
 
   if (error) {
-    return <h2>We got an error: {error}</h2>;
+    return <h2 style={{ color: 'red' }}>We got an error: {error}</h2>;
   }
 
   if (isFetching) {
