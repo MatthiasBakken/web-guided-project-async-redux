@@ -1,6 +1,6 @@
 
 const initialState = {
-  quote: null,
+  quote: {},
   isFetching: false,
   error: ''
 };
