@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 
 import { getRandomQuote } from '../actions';
 
-const Quotes = ({ quote, isFetching, error, ...props }) => {
+// const Quotes = ({ quote, isFetching, error, ...props }) => {
+const Quotes = ({ quote, isFetching, error, getRandomQuote }) => {
   useEffect(() => {
   });
 
@@ -20,7 +21,7 @@ const Quotes = ({ quote, isFetching, error, ...props }) => {
       <h2>{quote.anime}</h2>
       <h2>{quote.character}</h2>
       <h2>{quote.text}</h2>
-      <button onClick={() => props.getRandomQuote()}>Get new quote</button>
+      <button onClick={() => getRandomQuote()}>Get new quote</button>
     </>
   );
 };
