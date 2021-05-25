@@ -9,6 +9,7 @@ export const getRandomQuote = () => {
 
   axios.get('https://animechan.vercel.app/api/random')
     .then(res => {
+      console.log('bk: actions/: getRandomQuote: res: ', res)
       // got a quote!
       // state transition
       // dispatch({ type: 'QUOTE_FETCH_SUCCESS', payload: res.data.})
