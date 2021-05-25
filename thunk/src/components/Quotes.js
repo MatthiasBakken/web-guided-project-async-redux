@@ -20,7 +20,7 @@ const Quotes = ({ quote, isFetching, error, getRandomQuote }) => {
     <>
       <h2>{quote.anime}</h2>
       <h2>{quote.character}</h2>
-      <h2>{quote.text}</h2>
+      <h2>{quote.quote}</h2>
       <button onClick={() => getRandomQuote()}>Get new quote</button>
     </>
   );
