@@ -1,3 +1,4 @@
+import { SET_FETCHING_QUOTE } from '../actions';
 
 const initialState = {
   quote: {}, // {anime:'', character:'', text:''}
