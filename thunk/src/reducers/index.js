@@ -11,7 +11,7 @@ export const reducer = (state = initialState, action) => {
     case SET_FETCHING_QUOTE:
       return {
         ...state,
-        isFetching = true
+        isFetching: true
       }
     default:
       return state;
