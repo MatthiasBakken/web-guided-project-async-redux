@@ -6,7 +6,8 @@ import { getRandomQuote } from '../actions';
 // const Quotes = ({ quote, isFetching, error, ...props }) => {
 const Quotes = ({ quote, isFetching, error, getRandomQuote }) => {
   useEffect(() => {
-  });
+    getRandomQuote()
+  }, []);
 
   if (error) {
     return <h2 style={{ color: 'red' }}>We got an error: {error}</h2>;
