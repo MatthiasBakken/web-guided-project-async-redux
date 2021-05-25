@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
-import { getQuote } from '../actions';
+import { getRandomQuote } from '../actions';
 
 const Quotes = ({ quote, isFetching, error }) => {
   useEffect(() => {
