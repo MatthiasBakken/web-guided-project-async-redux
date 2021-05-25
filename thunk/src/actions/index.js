@@ -1,6 +1,7 @@
 // https://animechan.vercel.app/api/random
 import axios from 'axios';
 export const SET_FETCHING_QUOTE = 'SET_FETCHING_QUOTE';
+export const FETCH_QUOTE_SUCCESS = 'FETCH_QUOTE_SUCCESS';
 
 
 export const getRandomQuote = () => {
