@@ -17,5 +17,8 @@ export const getRandomQuote = () => {
         // state transition
         // dispatch({ type: 'QUOTE_FETCH_SUCCESS', payload: res.data.})
       })
+      .catch(err => {
+        dispatch({ type: FETCH_QUOTE_FAILURE, payload: JSON.stringify(err) })
+      })
   }
 }
