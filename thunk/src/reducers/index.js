@@ -17,7 +17,7 @@ export const reducer = (state = initialState, action) => {
       return {
         ...state,
         isFetching: false,
-        quote: action.payload
+        quote: { ...action.payload }
       }
     default:
       return state;
