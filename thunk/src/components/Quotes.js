@@ -17,7 +17,9 @@ const Quotes = ({ quote, isFetching, error }) => {
 
   return (
     <>
-      <h2>Kanye says: {quote}</h2>
+      <h2>{quote.anime}</h2>
+      <h2>{quote.character}</h2>
+      <h2>{quote.text}</h2>
       <button>Get new quote</button>
     </>
   );

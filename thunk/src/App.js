@@ -6,7 +6,7 @@ import './styles.css';
 function App() {
   return (
     <div className="App">
-      <h1>Hello Kanye🎤</h1>
+      <h1>Anime Quotes</h1>
       <Quotes />
     </div>
   );
