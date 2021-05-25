@@ -1,6 +1,6 @@
 
 const initialState = {
-  quote: {},
+  quote: {}, // {anime:'', character:'', text:''}
   isFetching: false,
   error: ''
 };
