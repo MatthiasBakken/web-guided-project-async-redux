@@ -1,4 +1,4 @@
-import { SET_FETCHING_QUOTE, FETCH_QUOTE_SUCCESS } from '../actions';
+import { SET_FETCHING_QUOTE, FETCH_QUOTE_SUCCESS, FETCH_QUOTE_FAILURE } from '../actions';
 
 const initialState = {
   quote: {}, // {anime:'', character:'', text:''}
@@ -18,6 +18,12 @@ export const reducer = (state = initialState, action) => {
         ...state,
         isFetching: false,
         quote: { ...action.payload }
+      }
+    case FETCH_QUOTE_FAILURE:
+      return {
+        ...state,
+        isFetching: false,
+        error: action.payload
       }
     default:
       return state;
