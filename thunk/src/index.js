@@ -9,7 +9,7 @@ import App from './App';
 import { reducer } from './reducers';
 
 // const store = createStore(reducer, applyMiddleware(thunk));
-const store = createStore(reducer;
+const store = createStore(reducer);
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(
